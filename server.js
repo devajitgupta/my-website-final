@@ -49,7 +49,7 @@ const port = process.env.PORT || 5000
 const server = app.listen(port, () => {
   console.log('Connected to port ' + port)
 })
-app.use(express.static(path.join(__dirname,'./dist/inde.html')));
+app.use(express.static(path.join(__dirname,'index.html')));
 
 // Error
 app.use((req, res, next) => {
